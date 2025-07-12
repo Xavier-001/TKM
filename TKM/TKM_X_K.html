@@ -111,7 +111,9 @@
       visibility: hidden;
       min-width: 0;
       min-height: 0;
-      max-width: 115vw; /* NUEVO: más ancho disponible */
+      width: 90vw;           /* Ancho visible de 90% de la pantalla */
+      max-width: 90vw;       /* Limita el ancho para que no se desborde */
+      word-break: break-word; /* Evita que las palabras se salgan */
     }
 
     .fila {
@@ -401,7 +403,7 @@
           // Mostrar el mensaje otra vez
           mostrarMensajeDeNuevo();
         }, 800);
-      }, 3100);
+      }, 2800);
     }
 
 
